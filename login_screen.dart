@@ -24,7 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
         throw Exception("Usuario no encontrado");
       }
 
-      // 🔥 Guardar solo el ID del usuario
+      // Guardar solo el ID del usuario
       await Prefs.saveUserId(data["usuario"]["id"]);
 
       Navigator.pushReplacementNamed(context, '/paquetes');
@@ -64,3 +64,4 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
+
